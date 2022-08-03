@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>轻食美食 - 享受美食的拥抱</title>
+	<!-- 清除默认的css样式 -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<!-- 图标和收藏夹图标 -->
+	<link rel="icon" href="./img/icon/轻食.icon" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/icon/轻食.icon" type="image/x-icon">
+	<link rel="stylesheet" href="./bootstrop/css/bootstrap.min.css">
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="css/public.css">
+	<!-- 插件引入 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="./bootstrop/js/bootstrap.min.js"></script>
+	<!-- 首页css/js -->
+	<script src="js/index.js"></script>
+	<script src="js/publicUser.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 顶部导航栏 public-->
+	<div class="index_index">
+		<div class="index_container">
+			<!-- logo -->
+			<a class="index_logo" href="index.html" title="享受美食的拥抱">
+				<img src="./img/icon/logo.png" alt="">
+				<span>轻食美食</span>
+			</a>
+			<!-- 目录 -->
+			<div class="index_nav">
+				<ul class="index_nav_ul">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="recipe.html">菜谱</a>
+					</li>
+					<li>
+						<a href="eatHealth.html">饮食健康</a>
+					</li>
+					<li>
+						<a href="eatSome.html">今天吃什么</a>
+					</li>
+				</ul>
+			</div>
+			<!-- logon、signup -->
+			<div class="index_user">
+				<!-- 登录 -->
+				<ul>
+					<li class="index_logon">
+						<a href="logon.html">登录</a>
+					</li>
+					<li class="index_signup">
+						<a href="logon.html?value=zhuche">注册</a>
+					</li>
+				</ul>
+				<div class="index_user_headr">
+					<a href="javascript:;" class="index_userMe" title="点击查看用户空间">
+						<span class="userMe_img">
+							<img src="./img/headerImg.jpg" alt="用户" class="img_user" >
+						</span>
+						<span class="userMe_user">轻食用户SaE215</span>
+					</a>
+					<div class="index_user_exit">
+						<ol class="index_userItem">
+							<li>
+								<a href="javascript:;">进入空间</a>
+							</li>
+							<li>
+								<a href="javascript:;">退出登录</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 轮播图 -->
+	<div id="carousel-example-generic" class="carousel slide index_lbt" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		</ol>
+		
+		<div class="carousel-inner index_lbt_img" role="listbox">
+			<div class="item active">
+			<img src="img/lbt1.jpg" alt="">
+			<div class="carousel-caption index_peiwen">
+				<h2>至臻糕点，尊享舌尖美味</h2>
+				<p><a href="recipe.html" style="color:aliceblue">进入查看 -></a></p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/lbt2.jpg" alt="">
+			<div class="carousel-caption index_peiwen">
+				<h2>小火慢炖，银耳八宝粥</h2>
+				<p><a href="recipe.html" style="color:aliceblue">进入查看 -></a></p>
+			</div>
+			
+		</div>
+		<div class="item">
+			<img src="img/lbt3.jpg" alt="">
+			<div class="carousel-caption index_peiwen">
+				<h2>梭子蟹、蟹排的美味碰撞</h2>
+				<p><a href="recipe.html" style="color:aliceblue">进入查看 -></a></p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/lbt4.jpg" alt="">
+			<div class="carousel-caption index_peiwen">
+				<h2>提拉米苏、软糯甜口</h2>
+				<p><a href="recipe.html" style="color:aliceblue">进入查看 -></a></p>
+			</div>
+			</div>
+		</div>
+
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+	</div>
+
+	<!-- 内容版心 -->
+	<div class="container">
+		<!-- 三餐 -->
+		<div class="index_contai_s1">
+			<!-- left -->
+			<div class="index_rice">
+				<h1 class="index_rice_title">
+					<strong>今日三餐</strong>
+					<ul id="index_ul">
+						<li data-food="8">早餐</li>
+						<li data-food="9">午餐</li>
+						<li data-food="10">下午茶</li>
+						<li data-food="11">晚餐</li>
+						<li data-food="12">夜宵</li>
+					</ul>
+				</h1>
+				<div class="index_rice_list">
+					<ul id="index_ulImg">
+						<!-- breakfast -->
+						<li class="index_breakfast">
+						</li>
+						<!-- lunch -->
+						<li class="index_lunch">
+						</li>
+						<!-- afterTea -->
+						<li class="index_afterTea">
+						</li>
+						<!-- dinner -->
+						<li class="index_dinner">
+						</li>
+						<!-- nightFood -->
+						<li class="index_nightFood">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- right -->
+			<div class="index_atten">
+				<div class="index_atten_cover">
+					<h3>联系作者</h3>
+					<img src="img/meweixin.png" alt="">
+				</div>
+				<img src="img/dashang.jpg" alt="联系作者">
+			</div>
+		</div>
+		<!-- 模块 -->
+		<!-- 新鲜推荐 -->
+		<div class="index_list_s1">
+			<div class="index_list_title">新鲜推荐</div>
+			<div class="index_list_content" id="index_new">
+			</div>
+		</div>
+		<!-- 时令菜肴 -->
+		<div class="index_list_s2">
+			<div class="index_list_title">时令菜肴</div>
+			<div class="index_list_content" id="index_listId">
+			</div>
+		</div>
+		<!-- 肉食精选 -->
+		<div class="index_list_s3">
+			<div class="index_list_title">肉食精选</div>
+			<div class="index_list_content" id="index_roushi">
+			</div>
+		</div>
+		<!-- 健康素食 -->
+		<div class="index_list_s4">
+			<div class="index_list_title">健康素食</div>
+			<div class="index_list_content" id="index_health">
+			</div>
+		</div>
+		<!-- 烘培 -->
+		<div class="index_list_s5">
+			<div class="index_list_title">烘培</div>
+			<div class="index_list_content" id="index_baking">
+			</div>
+		</div>
+	</div>
+	<!-- 返回顶部 -->
+	<div class="index_backTop">
+		<a href="javascript:;"></a>
+	</div>
+	<!-- 底部公共部分 -->
+	<footer class="index_footer">
+		<ul id="index_bottomul">
+			<li>
+				<a href="about.html">关于我们</a>
+			</li>
+			<li>
+				<a href="join.html">加入我们</a>
+			</li>
+			<li>
+				<a href="contactme.html">联系我们</a>
+			</li>
+			<li>
+				<a href="https://www.meishij.net/">友情链接</a>
+			</li>
+			<li>
+				<a href="map.html">网站地图</a>
+			</li>
+		</ul>
+		<p>
+			<a href="https://beian.miit.gov.cn/">京ICP备14030359号-1</a>/
+			<a href="http://www.beian.gov.cn/portal/registerSystemInfo">
+				<img src="img/icon/警标.png" alt="警" title="点击搜索备案号">京公网安备021053185
+			</a> Copyright ? 2021-2022 MEISHIJ CO.,LTD.
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评论管理</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+    <script src="js/comments_index.js"></script>
+</head>
+
+<body>
+<main>
+    <div class="main">
+        <div class="search">
+            <form action="" class="form-inline float-left" method="get">
+                <div class="form-group">
+                    <input class="form-control" id="comment_sou" name="key" placeholder="内容关键字" type="text" value="">
+                </div>
+                <button class="btn btn-primary" id="comment_btn" type="submit"><i class="iconfont"></i>搜索</button>
+            </form>
+        </div>
+        <div class="table-box">
+            <table class="table">
+                <colgroup>
+                    <col width="100">
+                    <col width="300">
+                    <col width="150">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>评论内容</th>
+                    <th>发表时间</th>
+                    <th>用户ID</th>
+                    <th>文章ID</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

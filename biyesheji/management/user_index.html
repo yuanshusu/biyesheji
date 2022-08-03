@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+    <script src="js/user_index.js"></script>
+</head>
+
+<body>
+<main>
+    <div class="main">
+        <div class="search">
+            <form class="form-inline float-left" action="" method="get">
+                <div class="form-group">
+                    <input type="text" name="key" value="" class="form-control" id="input_sou" placeholder="邮箱号/UID">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn_sou"><i class="iconfont"></i>搜索</button>
+            </form>
+        </div>
+
+        <div class="table-box">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">UID</th>
+                    <th scope="col">邮箱</th>
+                    <th scope="col">名称</th>
+                    <th scope="col">权限</th>
+                    <th scope="col">操作</th>
+                </tr>
+                </thead>
+    <!-- 填充数据 -->
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+</html>

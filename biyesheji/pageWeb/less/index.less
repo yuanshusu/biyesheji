@@ -1,0 +1,274 @@
+.index_lbt{
+    height: 100%;
+    user-select: none;
+    .index_lbt_img{
+        height: 100%;
+        img{
+            width: 100%;
+        }
+        .index_peiwen{
+            position: absolute;
+            width: 350px;
+            height: 200px;
+            left: 15%;
+            top: 40%;
+        }
+    } 
+}
+.index_contai_s1{
+    margin-top: 40px;
+    overflow: hidden;
+    .index_rice{
+        float: left;
+        width: 800px;
+        height: 400px;
+        background: white;
+        border-radius: 12px;
+        .index_rice_title{
+            font-weight: 600;
+            padding: 5px 0 10px 20px;
+            strong{
+                font-family: 黑体;
+                color: #222;
+                font-size: 25px;
+            }
+            ul{
+                height: 32px;
+                display: inline-block;
+                padding-right: 20px;
+                vertical-align:middle;
+                 
+                li{
+                    float: left;
+                    cursor: pointer;
+                    color: #999;
+                    height: 100%;
+                    line-height: 2;
+                    font-size: 18px;
+                    background: #eee;
+                    margin-right: 15px;
+                    border-radius: 16px;
+                    padding: 0 15px 0 15px;
+                }
+                li:hover{
+                    color:rgb(141,141,141);
+                    background-color: rgb(232,232,232);
+                }
+                // 被选中的添加css样式current
+                .current{
+                    background-image: linear-gradient(to right,#f67536,#f64d36);;
+                    color: #fff;
+                }
+                .current:hover{
+                    background-image: linear-gradient(to right,#f67536,#f64d36);;
+                    color: #fff;
+                }
+            }
+        }
+        .index_rice_list{
+            position: relative;
+            height: 320px;
+            width: 100%;
+            overflow: hidden;
+            ul{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 500%;
+                margin: 0;
+                .index_breakfast,
+                .index_lunch,
+                .index_afterTea,
+                .index_dinner,
+                .index_nightFood{
+                    float: left;
+                    height: 100%;
+                    padding-left: 20px;
+                    overflow: hidden;
+                    .index_breakfast_item{
+                        float: left;
+                        width: 240px;
+                        font-family: 宋体;
+                        padding-bottom: 10px;
+                        margin-right: 20px;
+                        .index_breakfast_z1{
+                            width: 240px;
+                            height: 240px;
+                        }
+                        .index_breakfast_title{
+                            color: #222;
+                            font-size: 18px;
+                            line-height: 30px;
+                            padding-top: 10px;
+                        }
+                        .index_breakfast_p{
+                            font-size: 14px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+
+        }
+    } 
+    .index_atten{
+        position: relative;
+        margin-left: 40px;
+        float: left;
+        width: 300px;
+        height: 400px;
+        .index_atten_cover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: white;
+            font-size: 20px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            h3{
+                margin: 30px 0 15px 0;
+                text-align: center;
+                font-weight: 600;
+            }
+            img{
+                margin-left: 25px;
+                width: 250px;
+                height: 250px;
+            }
+        }
+        img{
+            height: 400px;
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+.index_list_s1,
+.index_list_s2,
+.index_list_s3,
+.index_list_s4,
+.index_list_s5
+{
+    width: 100%;
+    height: 450px;
+    margin: 20px 0 10px 0;
+    overflow: hidden;
+    .index_list_title{
+        padding: 20px 0px 15px 0px;
+        font-size: 24px;
+        color: #222;
+        font-weight: 700;
+        font-family: 黑体;
+    }
+    .index_list_content{
+        width: 100%;
+        height: 100%;
+                                //弹性布局 
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        .index_content_item{
+            height: 380px;
+            width: 200px;
+            background: #fff;
+            border-radius: 12px;
+            .content_item{
+                position: relative;
+                height: 280px;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+                overflow: hidden;
+                .item_img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px 12px 0 0;
+                    background:url(../img/itemImg1.jpg) center no-repeat ;
+                    background-size: cover;
+                }
+                .item_hidden{
+                    position: absolute;
+                    display: none;
+                    bottom: -60px;
+                    height: 60px;
+                    width: 100%;
+                    background:rgba(0, 0, 0, 0.5);
+                    transform: translateY(-60px);
+                    .item_hidden_img{
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 18px;
+                        position: absolute;
+                        left: 10px;
+                        top: 12px;
+                        background: url(../img/nameimg.jpg) center no-repeat;
+                        background-size: cover; 
+                    }
+                    .item_hidden_name{
+                        font-size: 14px;
+                        color: #fff;
+                        line-height: 60px;
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-left: 60px;
+                    }
+                }
+                .item_img::after,.item_img::before{
+                    content: '';
+                    display: table;
+                }
+                .item_img::after{
+                    clear: both;
+                }
+            }
+            .content_info{
+                display: block;
+                height: 80px;
+                .info_name{
+                    font-size: 16px;
+                    color: #222;
+                    font-weight: 600;
+                    line-height: 28px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: block;
+                    margin: 12px 20px 0px;
+                    font-family: 黑体;
+                }
+                .info_name:hover{
+                    color: rgb(246,77,54);
+                }
+                .info_material{
+                    font-size: 14px;
+                    color: #999;
+                    font-weight: 400;
+                    line-height: 28px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: block;
+                    margin: 0px 20px 0px;
+                    padding-left: 24px;
+                    position: relative;
+                }
+                .info_material::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/icon/食物.png) center no-repeat;
+                    background-size:16px;
+                }
+            }
+        }
+    }
+}

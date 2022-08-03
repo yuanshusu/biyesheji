@@ -1,0 +1,77 @@
+.about_banner {
+  background: url(../img/hezuo.jpg) center no-repeat;
+  background-size: cover;
+}
+.about_container .about_h1 {
+  width: 100%;
+  height: 80px;
+  padding: 80px 0 50px 0;
+}
+.about_container .about_h1 h1 {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  width: 240px;
+  color: #FFF;
+  line-height: 1.6;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 0 15px 0 15px;
+  background: #f45d52;
+}
+.about_container .about_listItem1,
+.about_container .about_listItem2,
+.about_container .about_listItem3,
+.about_container .about_listItem4 {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.about_container .about_listItem1 .item_right,
+.about_container .about_listItem2 .item_right,
+.about_container .about_listItem3 .item_right,
+.about_container .about_listItem4 .item_right {
+  position: absolute;
+  top: 20%;
+  left: 67%;
+}
+.about_container .about_listItem1 .item_right strong,
+.about_container .about_listItem2 .item_right strong,
+.about_container .about_listItem3 .item_right strong,
+.about_container .about_listItem4 .item_right strong {
+  font-size: 40px;
+  line-height: 2;
+  font-weight: 600;
+}
+.about_container .about_listItem1 .item_right hr,
+.about_container .about_listItem2 .item_right hr,
+.about_container .about_listItem3 .item_right hr,
+.about_container .about_listItem4 .item_right hr {
+  margin-left: 0;
+  width: 80%;
+  background: #f45d52;
+  border: 3px solid #f45d52;
+}
+.about_container .about_listItem1 .item_right p,
+.about_container .about_listItem2 .item_right p,
+.about_container .about_listItem3 .item_right p,
+.about_container .about_listItem4 .item_right p {
+  font-size: 29px;
+  margin-top: 40px;
+}
+.about_container .about_listItem1 {
+  background: url(../img/about_item1.jpg) center no-repeat;
+  background-size: cover;
+}
+.about_container .about_listItem2 {
+  background: url(../img/about_item2.jpg) center no-repeat;
+  background-size: cover;
+}
+.about_container .about_listItem3 {
+  background: url(../img/about_item3.jpg) center no-repeat;
+  background-size: cover;
+}
+.about_container .about_listItem4 {
+  background: url(../img/about_item4.jpg) center no-repeat;
+  background-size: cover;
+}

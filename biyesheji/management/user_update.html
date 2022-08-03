@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改用户</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+    <script src="./js/user_update.js"></script>
+</head>
+
+<body>
+<main>
+    <div class="main">
+        <div class="title-box">
+            <h5>修改用户</h5>
+        </div>
+        <div class="form-box">
+            <div class="row">
+                <div class="col-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">名称</label>
+                            <input type="text" id="username" name="repassword" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="userRoot">权限</label>
+                            <input type="text" id="userRoot" name="repassword" class="form-control" placeholder="只能输入root/admin，否则修改不生效">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="submit-box">
+            <button type="submit" id="submitInfo" class="btn btn-primary">确定提交</button>
+            <button type="button" onclick="window.history.back()" class="btn btn-outline-secondary">取消</button>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

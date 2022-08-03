@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜谱 - 享受美食的拥抱</title>
+    <!-- 清除默认的css样式 -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<!-- 图标和收藏夹图标 -->
+	<link rel="icon" href="./img/icon/轻食.icon" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/icon/轻食.icon" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrop/css/bootstrap.min.css">
+    <!-- 公共样式 -->
+	<link rel="stylesheet" href="css/public.css">
+	<!-- 插件引入 -->
+	<script src="js/jquery.min.js"></script>
+    <!-- css\js -->
+    <link rel="stylesheet" href="css/recipe.css">
+    <script src="js/recipe.js"></script>
+	<script src="js/publicUser.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 public-->
+	<div class="index_index">
+		<div class="index_container">
+			<!-- logo -->
+			<a class="index_logo" href="index.html" title="享受美食的拥抱">
+				<img src="./img/icon/logo.png" alt="">
+				<span>轻食美食</span>
+			</a>
+			<!-- 目录 -->
+			<div class="index_nav">
+				<ul class="index_nav_ul">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="recipe.html">菜谱</a>
+					</li>
+					<li>
+						<a href="eatHealth.html">饮食健康</a>
+					</li>
+					<li>
+						<a href="eatSome.html">今天吃什么</a>
+					</li>
+				</ul>
+				
+			</div>
+			<!-- logon、signup -->
+			<div class="index_user">
+				<ul>
+					<li class="index_logon">
+						<a href="logon.html">登录</a>
+					</li>
+					<li class="index_signup">
+						<a href="logon.html?value=zhuche">注册</a>
+					</li>
+				</ul>
+				<div class="index_user_headr">
+					<a href="javascript:;" class="index_userMe" title="点击查看用户空间">
+						<span class="userMe_img">
+							<img src="./img/headerImg.jpg" alt="用户" class="img_user" >
+						</span>
+						<span class="userMe_user">轻食用户SaE215</span>
+					</a>
+					<div class="index_user_exit">
+						<ol class="index_userItem">
+							<li>
+								<a href="javascript:;">进入空间</a>
+							</li>
+							<li>
+								<a href="javascript:;">退出登录</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- main -->
+    <main class="container">
+        <div class="recipe_main">
+            <!-- 左边分类 -->
+            <div class="recipe_leftBox">
+                <h3 class="leftBox_class">菜谱分类</h3>
+                <div class="leftBox_ulList">
+                    <!-- list -->
+                    <ul class="leftBox_ul">
+                       <li class="ulList_item itemLi1">
+                           <strong>实用饭菜</strong>
+                           <i></i>
+                       </li>
+                       <li class="ulList_item itemLi2">
+                           <strong>每日三餐</strong>
+                           <i></i>
+                       </li>
+                       <li class="ulList_item itemLi3">
+                           <strong>主食大全</strong>
+                           <i></i>
+                       </li>
+                       <li class="ulList_item itemLi4">
+                           <strong>家常菜谱</strong>
+                           <i></i>
+                       </li>
+                       <li class="ulList_item itemLi5">
+                           <strong>中华菜系</strong>
+                           <i></i>
+                       </li> 
+                    </ul>
+                    <!-- display -->
+                    <div class="leftBox_display">
+						<h1>网络连接错误!</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边菜谱 -->
+            <div class="recipe_rightBox">
+				<!-- 信息and筛选 -->
+				<h3 class="rightBox_top">
+					<span class="rightBox_newName" data-listName="main">下饭菜的做法</span>
+					<ul class="rightBox_ul">
+						<li>
+							<em class="rightBox_time rightBox_hover">发布顺序</em>
+						</li>
+						<li>
+							<em class="rightBox_name">菜谱名称</em>
+						</li>
+						<li>
+							<em class="rightBox_click">最多点击</em>
+						</li>
+					</ul>
+				</h3>
+				<!-- 栏目 -->
+				<div class="recipe_container">
+					<div id="recipe_containers">
+					</div>
+					<div class="recipe_pages">
+						<a href="javascript:;" class="page_top"  id="page_top">上一页</a>
+						<ul class="page_list">
+							<li>
+								<a href="javascript:;" class="page_listItem page_listClick">1</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="page_listItem">2</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="page_listItem">3</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="page_listItem">4</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="page_listItem">5</a>
+							</li>
+						</ul>
+						<a href="javascript:;" class="page_down" id="page_down" >下一页</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 返回顶部 -->
+	<div class="index_backTop">
+		<a href="javascript:;"></a>
+	</div>
+	<!-- 底部公共部分 -->
+	<footer class="index_footer">
+		<ul id="index_bottomul">
+			<li>
+				<a href="about.html">关于我们</a>
+			</li>
+			<li>
+				<a href="join.html">加入我们</a>
+			</li>
+			<li>
+				<a href="contactme.html">联系我们</a>
+			</li>
+			<li>
+				<a href="https://www.meishij.net/">友情链接</a>
+			</li>
+			<li>
+				<a href="map.html">网站地图</a>
+			</li>
+		</ul>
+		<p>
+			<a href="https://beian.miit.gov.cn/">京ICP备14030359号-1</a>/
+			<a href="http://www.beian.gov.cn/portal/registerSystemInfo">
+				<img src="img/icon/警标.png" alt="警" title="点击搜索备案号">京公网安备021053185
+			</a> Copyright ? 2021-2022 MEISHIJ CO.,LTD.
+		</p>
+	</footer>
+</body>
+</html>

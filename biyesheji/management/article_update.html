@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改文章</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/wangEditor/3.1.1/wangEditor.js"></script>
+    <script src="js/article_update.js"></script>
+    <style>
+        #articleID,#article_con{
+            display: none;
+        }
+        .w-e-toolbar{
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <div class="main">
+
+        <div class="title-box">
+            <h5>修改文章</h5>
+        </div>
+        <div class="form-box">
+            <div class="row">
+                <div class="col-5">
+                    <form id="docForm">
+                        <!-- 分类 -->
+                        <div class="form-group">
+                            <label>分类</label>
+                            <select name="article_class" class="form-control">
+                                <option value="饮食常识">饮食常识</option>
+                                <option value="食疗食补">食疗食补</option>
+                                <option value="食物档案">食物档案</option>
+                            </select>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 标题 -->
+                        <div class="form-group">
+                            <label>标题</label>
+                            <input type="text" name="article_title" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 副标题 -->
+                        <div class="form-group">
+                            <label>副标题</label>
+                            <input type="text" name="article_titleTwo" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 简介 -->
+                        <div class="form-group">
+                            <label>简介</label>
+                            <input type="text" name="article_sort" class="form-control">
+                            <small class="form-text text-muted">不宜太长,可以是内容片段</small>
+                        </div>
+                        <!-- 创作 -->
+                        <div class="form-group">
+                            <label>创作</label>
+                            <select name="original" class="form-control">
+                                <option value="原创">原创</option>
+                                <option value="转载">转载</option>
+                            </select>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 内容 -->
+                        <div class="form-group">
+                            <label>内容</label>
+                            <div class="form-group" id="wangEditor"></div>
+                            <textarea type="text" id="article_con"  name="article" rows="5" class="form-control" value=""></textarea>
+                        </div>
+                        <!-- 隐藏id -->
+                        <div class="form-group">
+                            <input type="text" name="article_id" id="articleID" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="submit-box">
+            <button type="submit" id="article_sub" class="btn btn-primary">确定提交</button>
+            <button type="button" onclick="window.history.back()" class="btn btn-outline-secondary">取消</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+.about_banner {
+  background: url(../img/jionImg.jpg) center no-repeat;
+  background-size: cover;
+}
+.join_container {
+  width: 100%;
+  overflow: hidden;
+}
+.join_container .join_hello {
+  padding-top: 45px;
+  margin: 0 auto;
+  width: 80%;
+}
+.join_container .join_hello p {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.join_container .join_title1,
+.join_container .join_title2 {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.join_container .join_title1 p,
+.join_container .join_title2 p {
+  position: relative;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 2;
+}
+.join_container .join_title1 p::after,
+.join_container .join_title2 p::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  border: 3px solid #f45d52;
+  background: #f45d52;
+}
+.join_container .join_item {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  overflow: hidden;
+}
+.join_container .join_item .join_itemChild {
+  height: 470px;
+  float: left;
+  margin-right: 20%;
+}
+.join_container .join_item .join_itemChild p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 20px 0 20px 0;
+}
+.join_container .join_item .join_itemChild:nth-child(2n) {
+  margin-right: 0;
+}
+.join_container .join_emil {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0 60px 0;
+}
+.join_container .join_emil p {
+  font-size: 30px;
+  font-weight: 400;
+}
+.join_container .join_emil p a {
+  color: aquamarine;
+}

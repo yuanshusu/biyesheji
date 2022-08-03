@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改菜谱</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./static/admin/css/main.css" >
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/jquery-3.3.1.min.js" ></script>
+    <script src="./static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="./static/admin/js/config.js" ></script>
+    <script src="./static/admin/js/script.js" ></script>
+    <script src="./js/recipe_update.js"></script>
+    <style>
+        #displayNo{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <div class="main">
+        <div class="title-box">
+            <h5>修改菜谱</h5>
+        </div>
+        <div class="form-box">
+            <div class="row">
+                <div class="col-5">
+                    <form id="recipeForm">
+                        <!-- 标题 -->
+                        <div class="form-group">
+                            <label>标题</label>
+                            <input type="text" name="title" class="form-control">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 封面 -->
+                        <!-- <div class="form-group">
+                            <label>更改封面</label>
+                            <div>
+                                <input type="file" id="flie_coverImg" name="coverImg"  class="form-control">
+                            </div>
+                            <small class="form-text text-muted"></small>
+                        </div> -->
+                        <!-- 主料 -->
+                        <div class="form-group">
+                            <label>主料</label>
+                            <input type="text" name="ingrediendMain" class="form-control">
+                            <small class="form-text text-muted">多个主料用英文逗号分开，否则算一个主料</small>
+                        </div>
+                        <!-- 主料数量 -->
+                        <div class="form-group">
+                            <label>主料用量</label>
+                            <input type="text" name="mainNumber" class="form-control">
+                            <small class="form-text text-muted">主料用量用英文逗号分开，数量对应上面的主料量</small>
+                        </div>
+                        <!-- 工艺 -->
+                        <div class="form-group">
+                            <label>工艺</label>
+                            <select name="skills1" class="form-control" >
+                                <option value="烧" selected>烧</option>
+                                <option value="煮">煮</option>
+                                <option value="煎">煎</option>
+                                <option value="炒">炒</option>
+                                <option value="拌">拌</option>
+                                <option value="蒸">蒸</option>
+                                <option value="烤">烤</option>
+                                <option value="烘培">烘培</option>
+                                <option value="炸">炸</option>
+                                <option value="卤">卤</option>
+                                <option value="腌">腌</option>
+                                <option value="其他工艺">其他工艺</option>
+                            </select>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 口味 -->
+                        <div class="form-group">
+                            <label>口味</label>
+                            <select name="skills2" class="form-control">
+                                <option value="家常味" selected>家常味</option>
+                                <option value="香辣味">香辣味</option>
+                                <option value="酸辣味">酸辣味</option>
+                                <option value="酸甜味">酸甜味</option>
+                                <option value="甜味">甜味</option>
+                                <option value="咸鲜味">咸鲜味</option>
+                                <option value="五香味">五香味</option>
+                                <option value="奶香味">奶香味</option>
+                            </select>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 时间 -->
+                        <div class="form-group">
+                            <label>时间</label>
+                            <input type="text" name="skills3" class="form-control" placeholder="用分钟表示或者小时">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 难度 -->
+                        <div class="form-group">
+                            <label>难度</label>
+                            <select name="skills4" class="form-control">
+                                <option value="新手尝试">新手尝试</option>
+                                <option value="初级入门">初级入门</option>
+                                <option value="初中水平">初中水平</option>
+                                <option value="中级掌勺">中级掌勺</option>
+                                <option value="厨神大师">厨神大师</option>
+                                <option value="未知">未知</option>
+                            </select>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 人/份 -->
+                        <div class="form-group">
+                            <label>人/份</label>
+                            <input type="text" name="people" class="form-control" placeholder="1/2/3..人份">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                        <!-- 简介 -->
+                        <div class="form-group">
+                            <label>简介</label>
+                            <textarea type="text" name="introdace" rows="5" class="form-control" placeholder="请输入菜谱的介绍或好处"></textarea>
+                        </div>
+                        <!-- 辅料 -->
+                        <div class="form-group">
+                            <label>辅料</label>
+                            <input type="text" name="ingrediendTwo" class="form-control">
+                            <small class="form-text text-muted">多个辅料用英文逗号分开，否则算一个辅料</small>
+                        </div>
+                        <!-- 辅料数量 -->
+                        <div class="form-group">
+                            <label>辅料用量</label>
+                            <input type="text" name="twoNumber" class="form-control">
+                            <small class="form-text text-muted">辅料用量用英文逗号分开，数量对应上面的辅料量</small>
+                        </div>
+                        <div  class="form-group">
+                            <input type="text" id="displayNo" name="mainId" class="form-control">
+                        </div>
+                        <!-- 成功图 -->
+                        <!-- <div class="form-group">
+                            <label>成功样图</label>
+                            <div>
+                                <input type="file" name="successImg"  class="form-control">
+                            </div>
+
+                            <small class="form-text text-muted"></small>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-box">
+            <button type="submit" id="btnValue" class="btn btn-primary">确定提交</button>
+            <button type="button" onclick="window.history.back()" class="btn btn-outline-secondary">取消</button>
+        </div>
+    </div>
+</main>
+
+</body>
+
+</html>
