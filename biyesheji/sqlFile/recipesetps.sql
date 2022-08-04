@@ -1,0 +1,11 @@
+INSERT INTO `recipesetps` VALUES (1, '准备好所有的食材。', 'http://localhost:8080/img/setpsImg/setps1_1.jpg', 1);
+INSERT INTO `recipesetps` VALUES (2, '鸡翅洗净在上面均匀的划上几道。', 'http://localhost:8080/img/setpsImg/setps1_2.jpg', 1);
+INSERT INTO `recipesetps` VALUES (3, '平底锅放入鸡翅中小火煎至，不放油', 'http://localhost:8080/img/setpsImg/setps1_3.jpg', 1);
+INSERT INTO `recipesetps` VALUES (4, '直到鸡翅出油两面微黄。', 'http://localhost:8080/img/setpsImg/setps1_4.jpg', 1);
+INSERT INTO `recipesetps` VALUES (5, '再把葱姜，八角花椒放入煎至出香味。', 'http://localhost:8080/img/setpsImg/setps1_5.jpg', 1);
+INSERT INTO `recipesetps` VALUES (6, '加入白酒出香', 'http://localhost:8080/img/setpsImg/setps1_6.jpg', 1);
+INSERT INTO `recipesetps` VALUES (7, '加入老抽，生抽。', 'http://localhost:8080/img/setpsImg/setps1_7.jpg', 1);
+INSERT INTO `recipesetps` VALUES (8, '再加入可乐。可乐漫过鸡翅为好。', 'http://localhost:8080/img/setpsImg/setps1_8.jpg', 1);
+INSERT INTO `recipesetps` VALUES (9, '加盖大火煮开，中火烧制。', 'http://localhost:8080/img/setpsImg/setps1_9.jpg', 1);
+INSERT INTO `recipesetps` VALUES (10, '汤汁半干加盐调味。', 'http://localhost:8080/img/setpsImg/setps1_10.jpg', 1);
+INSERT INTO `recipesetps` VALUES (11, '最后大火收汁浓稠即可。', 'http://localhost:8080/img/setpsImg/setps1_11.jpg', 1);
